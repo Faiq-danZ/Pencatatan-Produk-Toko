@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kelas.controller.FormController">
+   <!-- Header Atas -->
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="65.0" prefWidth="550.0" spacing="10.0" style="-fx-background-color: white; -fx-background-radius: 20;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="32.0" prefWidth="251.0" text="Pencatatan Produk Toko">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </HBox.margin>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#bukaDaftar" prefHeight="36.0" prefWidth="205.0" style="-fx-background-color: linear-gradient(to bottom, #EEEEEE, #E0E0E0); -fx-border-color: #B5B5B5; -fx-border-width: 1px; -fx-background-radius: 8px; -fx-border-radius: 8px; -fx-text-fill: #222222; -fx-padding: 8px 16px;" text="Daftar Produk">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="25.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="25.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </top>
+
+   <!-- Area Form Input -->
+   <bottom>
+      <ScrollPane fitToWidth="true" prefHeight="700.0" prefWidth="550.0" style="-fx-background-color: #e0e0e0;" BorderPane.alignment="CENTER">
+         <content>
+            <VBox alignment="TOP_CENTER" spacing="15.0" style="-fx-background-color: linear-gradient(to bottom, #EEEEEE, #E0E0E0); -fx-background-radius: 15;">
+               <padding>
+                  <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+               </padding>
+               <children>
+                  <VBox prefWidth="487.0" spacing="5.0" style="-fx-background-color: white; -fx-background-radius: 10;">
+                     <padding>
+                        <Insets bottom="20.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                     <children>
+                        <Label text="Tambah Produk Baru">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+
+                        <!-- Input 1: Nama Produk -->
+                        <Label text="Nama Produk">
+                           <font><Font name="Segoe UI" size="15.0" /></font>
+                        </Label>
+                        <TextField fx:id="namaField" prefHeight="32.0" promptText="Contoh : Kopi Hitam" style="-fx-background-color: linear-gradient(to bottom, #F9F9F9, #F1F1F1); -fx-border-color: #C5C5C5; -fx-background-radius: 6px; -fx-border-radius: 6px; -fx-padding: 6px 10px;">
+                           <VBox.margin><Insets bottom="10.0" /></VBox.margin>
+                        </TextField>
+
+                        <!-- Input 2: Kategori Produk -->
+                        <Label text="Kategori Produk">
+                           <font><Font name="Segoe UI" size="15.0" /></font>
+                        </Label>
+                        <ComboBox fx:id="kategoriBox" prefHeight="34.0" prefWidth="455.0" promptText="Pilih Kategori Produk" style="-fx-background-radius: 8;">
+                           <VBox.margin><Insets bottom="10.0" /></VBox.margin>
+                        </ComboBox>
+
+                        <!-- Input 3: Harga Produk -->
+                        <Label text="Harga Produk (Rp)">
+                           <font><Font name="Segoe UI" size="15.0" /></font>
+                        </Label>
+                        <TextField fx:id="hargaField" prefHeight="32.0" promptText="Contoh: 15000" style="-fx-background-color: linear-gradient(to bottom, #F9F9F9, #F1F1F1); -fx-border-color: #C5C5C5; -fx-background-radius: 6px; -fx-border-radius: 6px; -fx-padding: 6px 10px;">
+                           <VBox.margin><Insets bottom="10.0" /></VBox.margin>
+                        </TextField>
+
+                        <!-- Input 4: Jumlah Produk (Stok Pcs) -->
+                        <Label text="Jumlah (Pcs)">
+                           <font><Font name="Segoe UI" size="15.0" /></font>
+                        </Label>
+                        <TextField fx:id="jumlahField" prefHeight="32.0" promptText="Contoh: 10" style="-fx-background-color: linear-gradient(to bottom, #F9F9F9, #F1F1F1); -fx-border-color: #C5C5C5; -fx-background-radius: 6px; -fx-border-radius: 6px; -fx-padding: 6px 10px;">
+                           <VBox.margin><Insets bottom="10.0" /></VBox.margin>
+                        </TextField>
+
+                        <!-- Input 5: Upload Foto Produk -->
+                        <Label text="Foto Produk (opsional)">
+                           <font><Font name="Segoe UI" size="15.0" /></font>
+                        </Label>
+                        <ImageView fx:id="gambarView" fitHeight="150.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button mnemonicParsing="false" onAction="#pilihGambar" prefHeight="32.0" prefWidth="120.0" style="-fx-background-radius: 8;" text="Pilih Gambar" />
+                        <Label text="PNG/JPEG, maksimal 5 MB." textFill="#666666">
+                           <font><Font size="12.0" /></font>
+                        </Label>
+
+                        <Label fx:id="pesanLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="22.0" />
+
+                        <!-- Tombol Aksi Simpan -->
+                        <Button mnemonicParsing="false" onAction="#simpan" prefHeight="45.0" prefWidth="466.0" style="-fx-background-color: #FFB366; -fx-background-radius: 8; -fx-cursor: hand;" text="Simpan dan Lihat Detail">
+                           <font><Font name="Segoe UI Bold" size="15.0" /></font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </bottom>
+</BorderPane>

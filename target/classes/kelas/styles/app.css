@@ -1,0 +1,55 @@
+/* === STYLING TABLE VIEW & HEADER === */
+.table-view {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-font-size: 15px;
+    -fx-background-color: #ffffff;
+    -fx-fixed-cell-size: 52px; /* Meninggikan baris agar foto 40x40px lega */
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+}
+
+/* Header Tabel */
+.table-view .column-header-background {
+    -fx-background-color: #f4f6f8;
+    -fx-border-color: transparent transparent #dcdcdc transparent;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-size: 45px;
+}
+
+.table-view .column-header .label {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-alignment: CENTER;
+}
+
+/* Sel Isi Tabel */
+.table-cell {
+    -fx-alignment: CENTER-LEFT;
+    -fx-padding: 0px 10px;
+    -fx-border-color: transparent transparent #f0f0f0 transparent;
+    -fx-text-fill: #222222;
+}
+
+/* Warna Baris Selang-Seling & Hover */
+.table-row-cell:odd {
+    -fx-background-color: #ffffff;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #fcfcfc;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #f0f7ff;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #e3f2fd;
+    -fx-text-fill: #0d47a1;
+}

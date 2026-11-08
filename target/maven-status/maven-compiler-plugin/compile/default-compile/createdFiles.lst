@@ -1,0 +1,9 @@
+kelas\Model.class
+kelas\controller\DaftarController.class
+kelas\controller\DetailController.class
+kelas\controller\FormController.class
+kelas\controller\DaftarController$1.class
+kelas\MainApp.class
+kelas\model\Produk.class
+kelas\data\DataProduk.class
+kelas\Navigator.class
