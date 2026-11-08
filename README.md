@@ -16,10 +16,17 @@ Karena konfigurasi project dan struktur *build* sudah diatur sebelumnya, Anda da
 3. Lakukan **Clean and Build** pada project untuk memastikan seluruh file FXML dan *dependencies* terkompilasi dengan baik.
 4. Jalankan aplikasi menggunakan tombol **Run** atau tekan shortcut **`Shift + F6`** pada keyboard Anda.
 
+
+
 <img width="686" height="1016" alt="image" src="https://github.com/user-attachments/assets/752e3405-2b11-4943-bc07-7f867e139dfd" />
+
+
 
 <img width="591" height="1024" alt="image" src="https://github.com/user-attachments/assets/562e4f8f-74cb-48b1-868c-2244bbda1cda" />
 
-<img width="510" height="915" alt="image" src="https://github.com/user-attachments/assets/c831442d-fff7-4e91-ace4-ee75e856b82f" />
+
+
+<img width="944" height="822" alt="image" src="https://github.com/user-attachments/assets/ce89a1e9-a5ca-4516-9512-b7083ddc261c" />
+
 
 
